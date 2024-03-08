@@ -1,1 +1,18 @@
-<p>login works!</p>
+<mat-card class="login-page">
+  <div class="login-content">
+    <mat-card-title>Login</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="loginForm">
+        <mat-form-field>
+          <input matInput placeholder="Username" formControlName="email" type="email">
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Password" formControlName="password" type="password">
+        </mat-form-field>
+        <div>
+          <button mat-raised-button color="primary" type="submit" (click)="login()">Login</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </div>
+</mat-card>

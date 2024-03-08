@@ -1,0 +1,43 @@
+.login-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  div.login-content {
+    padding: 10px;
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 0 #000000;
+    mat-card-title {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    mat-card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .mat-form-field {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .mat-raised-button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
